@@ -1,0 +1,143 @@
+html, body {
+  height: 1370px;
+  background-color: #24292e;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gill Sans", sans-serif;
+  overflow: auto;
+}
+
+.navigation-menu {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  min-width: 710px;
+  background-color: #3B5998;
+  z-index: 60;
+}
+
+.menu-contents {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navigation-menu a {
+  float: left;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#feedback {
+  /* Put feedback to the right of the navigation menu */
+  float: right;
+}
+
+.navigation-menu a:hover {
+  background-color: #6497b1;
+}
+
+.history-section {
+  position: absolute;
+  text-align: center;
+  width: 100%; 
+  top: 100px;
+  min-width: 1024px;
+}
+
+.images, .text {
+  display: inline-block;
+}
+
+#history-text {
+  position: relative;
+  bottom: 50px;
+  margin-right: 70px;
+  right: 10px;
+}
+
+#history-image img{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  top: 60px;
+  margin-left: 70px;
+  right: 10px;
+}
+
+h1 {
+  color: #3B5998;
+}
+
+p {
+  color: #fff;
+}
+
+.works-section{
+  position: absolute;
+  text-align: center;
+  top: 480px;
+  width: 100%;
+  min-width: 1024px;
+}
+
+#works-text {
+  position: relative;
+  bottom: 10px;
+  margin-left: 50px;
+  left: 5px;
+}
+
+#works-image img{
+  border-radius: 30px;
+  width: 450px;
+  height: 270px;
+  position: relative;
+  top: 100px;
+  margin-right: 50px;
+  left: 10px;
+}
+
+.content-section{
+  position: absolute;
+  text-align: center;
+  top: 940px;
+  width: 100%;
+  min-width: 1024px;
+}
+
+.container {
+  /* display property of internet explorer */
+  display: -ms-inline-grid;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+  position: relative;
+  left: 100px;
+  top: 20px;
+  margin-bottom: 70px;
+  right: 10px;
+}
+
+.content-image {
+  height: 150px;
+  width: 150px;
+}
+
+#content-text {
+  position: relative;
+  top: 40px;
+  right: 75px;
+  top: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #7289da;
+}
+
+.text a:hover {
+  color: #1b85b8;
+}

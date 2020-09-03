@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/web-worksCSS.css">
+    <title>Learn about the internet</title>
+  </head>
+
+  <body>
+    <!-- Navigation menu -->
+    <div class="navigation-menu">
+      <nav>
+        <ul class="menu-contents">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="web-history.html">History of the Web</a></li>
+          <li><a href="web-works.html">How the Web works</a></li>
+          <li><a href="web-content.html">Web content</a></li>
+          <li id="feedback"><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>    
+    </div>
+
+    <!-- Navigation menu with local links -->
+    <div class="internet-section">
+      <ul id="sections">
+        <li><a href="#description">What is the Internet?</a></li>
+        <li><a href="#clients">Clients, Servers and Peers</a></li> 
+        <li><a href="#protocols">Protocols</a></li>
+        <li><a href="#servers">Servers</a></li>
+        <li><a href="#architecture">Web Architecture</a></li> 
+        <li><a href="#quiz">Quiz</a></li> 
+      </ul>
+    </div>
+  
+    <!-- Empty divs are used for better functionality of local links -->
+    <div class="empty"></div>
+    <div id="internet-heading">
+    <h1>How the Internet works</h1>
+    </div>
+
+    <div class="empty"></div>
+    <div class="information" id="description">
+      <h2>What is the Internet?</h2>
+      <p>Internet is a networking infrastructure that allows hardware devices to physically connect to one another. The Internet provides so many capabilites
+        that it revolutionised the world we live in. It is easily accessible and allows people to share information, communicate and even carry out various
+        transactions. These days internet is so big that estimated amount of information that courses through it is about five exabytes a day. That’s equivalent
+        to 40,000 two-hour standard definition movies per second.</p>
+      <p class="list-paragraph">Internet protocols (IP) specify how the transactionson the internet are carried out:</p>
+      <ul>
+        <li>How communication is initiated and maintained.</li>
+        <li>Type, size and structure of the data sent/received.</li>
+        <li>They enable the services running over the internet.</li>
+      </ul>
+      <div class="video-wrapper">
+        <iframe src="https://player.vimeo.com/video/128575085?title=0&byline=0&portrait=0" width="640" height="360" 
+        allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <p><a href="https://vimeo.com/128575085">BBC Computing &mdash; How Does The Internet Work?</a> from <a href="https://vimeo.com/splinterdesign">
+        Splinter</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+      </div>
+    </div>
+
+    <div class="empty"></div>
+    <div class="information" id="clients">
+      <h2>Clients, Servers and Peers</h2>
+      <p>Most common internet services are based on a client/server model using appropriate communication protocols. Client-server is a system that performs both 
+        the functions of the client and server so as to promote the sharing of information between them. It allows users to have access to the same database at
+        the same time, the place where the information is stored.</p>
+      <p class="list-paragraph">Usually local software clients access centralised remote servers. Examples:</p>
+      <ul>
+        <li>Email via an Outlook client accessing an ISP's mail server.</li>
+        <li>Web pages via a Firefox web client accessing an Apache web server.</li>
+        <li>Bank custommer accesses online banking services with a web browser (the client), the client initiates a request to the bank's server.</li>
+        <li>People using social media services where the server of the social media company is accessed by the users.</li>
+      </ul>
+      <p class="list-paragraph">Peer-to-peer technology is a network where two or more computers are connected and share resources between them without going
+        through a separate server computer. P2P technology can directly connect multiple computers - each acting as both client and server:</p>
+      <ul>
+        <li>Responsibly implemented Peer-to-Peer can be very efficient for data-rich services.</li>
+        <li>Distributed download, media on demand, VOIP/video calling etc.</li>
+        <li>All the cryptocurrencies work according to Peer-to-peer technology principle.</li>
+      </ul>
+    </div>
+
+    <div class="empty"></div>
+    <div class="information" id="protocols">
+      <h2>Protocols</h2>
+      <p class="list-paragraph">As mentioned previously, protocols are a set of rules or procedures for transmitting data between electronic devices. They specify
+         how the transactions on the internet are carried out. Before sending any kind of information on the internet there must exist preexisting agreement
+         as to how that information will be structured and how each side will send and receive it. Without protocols computers would not have the capability
+         to "communicate" to each other. Clients and servers typically use a combination of protocols to provide specific services to the users:</p>
+      <ul>
+        <li>Web access</li>
+        <li>Email</li>
+        <li>File transfer</li>
+        <li>Peer-to-peer data exchange</li>
+        <li>Chat/instant messaging</li>
+        <li>Shell/console access to computers</li>
+      </ul>
+      <p>Most common protocols in use today are those associated with web and email services - HTTP/HTTPS, SMTP/IMAP/POP etc.</p>
+      <!-- Table for data -->
+      <table>
+        <tr>
+          <th colspan="2">Protocol</th>
+          <th>Notes</th> 
+        </tr>
+        <tr>
+          <td>HTTP</td>
+          <td>HyperText Transfer Protocol</td> 
+          <td>Core protocol for web transactions</td>
+        </tr>
+        <tr>
+          <td>SSL</td>
+          <td>Secure Sockets Layer</td> 
+          <td>Data encryption</td>
+        </tr>
+        <tr>
+          <td>HTTPS</td>
+          <td>Secure HTTP</td> 
+          <td>A combination of HTTP and SSL</td>
+        </tr>
+        <tr>
+          <td>SMTP <br>
+              POP <br>
+              IMAP
+          </td>
+          <td>Simple Mail Transfer Protocol <br>
+              Post Office Protocol <br>
+              Internet Message Access Protocol <br>
+          </td> 
+          <td>Used in combination to provide most email services</td>
+        </tr>
+        <tr>
+          <td>FTP</td>
+          <td>File Transfer Protocol</td> 
+          <td>Used to exchange files between computers</td>
+        </tr>
+        <tr>
+          <td>SSH and SFTP</td>
+          <td>Secure SHell and Secure/SSH FTP</td> 
+          <td>Encrypted access to remote computers plus extension for encrypted file transfer</td>
+        </tr>
+        <tr>
+          <td>BitTorrent</td>
+          <td>BitTorrent</td> 
+          <td>Protocol for peer-to-peer data access and exchange</td>
+        </tr>
+      </table>
+
+      <h3>TCP/IP: The heart of the Internet</h3>
+      <p class="list-paragraph">Transmission Control Protocol (TCP) and Internet Protocol (IP) are two distinct computer network protocols. TCP transport
+        is used to deliver data across IP networks. TCP/IP functionality is divided into four layers:</p>
+      <ul>
+        <li>The datalink layer - consists of methods and protocols that operate only on a link (network component that interconnects nodes or hosts in the network).</li>
+        <li>The internet (or networking) layer - connects independent networks to transport the packets containing the data across network.</li>
+        <li>The transport layer - handles communications between hosts and is responsible for flow control, reliability, and multiplexing.</li>
+        <li>The application layer - standardizes data exchange for applications.</li>
+      </ul>     
+      <p>Transmission Control protocol and Internet Protocol have different purposes:</p>
+      <p class="list-paragraph">TCP (Transmission Control Protocol):</p>
+      <ul>
+        <li>Handles direct connection on computer between client/server software and network interfaces.</li>
+        <li>Breaks outgoing messages from application into packets to send via IP. Packet is a unit of data that travels along a given network path.
+            Packets have two parts: header (addressing/sequencing information and metadata) and body (actual data payload).</li>
+        <li>Assembles incoming packets into messages to pass back to application.</li>
+      </ul>
+      <p class="list-paragraph">IP (Internet Protocol):</p>
+      <ul>
+        <li>Handles delivery of packets to/from any device with an IP address - a unique numeric identifier for a device on the internet e.g. <span>128.240.233.249</span></li>
+      </ul>
+      <p>IP routes packets using address info in the header to direct them to their destination. IP routing is connection-less and does not require a fixed
+         connection between endpoints. It enables data to travel via multiple routes to reach endpoint. One "wire" can handle multiple connections/services. 
+         If the failure occurs packets can be re-routed. However this proccess has some risks. Data might be corrupted, packets might get lost or they might 
+         duplicate. Also, packets might be delivered out of sequence (e.g. ent A -> B, received B -> A). </p>
+      <p>As a result IP only promises best-effort-delivery. Performance of IP routing can be affected by various factors.
+         Unpredictability means IP cannot guarantee that all packets will arrive within a fixed time, in correct order, or at all.
+         To reduce the severity of this problem, TCP on destination device checks and reassembles packets based on header information and can request re-transmission 
+         of lost/corrupted packets, correctly re-sequence packets, refuse to accept or wait for any more (drop connection).</p>
+      <h3>Domain Names</h3>
+      <p>Domain names make internet easier (for humans) to use by mapping numeric IP addresses to text-based names e.g. 
+         <span>128.240.233.249 &#60;&#61;&#62; www.netskills.ac.uk</span>. In simple words, a domain name is the name (URL) of your website. When device makes a request 
+         using a domain name it is resolved back into a numeric IP address by a DNS server. New domain registrations are automatically propagated
+         across global DNS system.</p>
+    </div>
+
+    <div class="empty"></div>
+    <div class="information" id="servers">
+      <h2>Servers</h2>
+      <p>A server is a computer designed to process requests and deliver data to another computer over the internet or a local network. Web server listens
+         on an open network port for incoming HTTP requests and responds accordingly. Any computer running specific software can function as a server.
+         However, server normally refers to the high-powered machines that function as the pumps pushing and pulling data from the internet.</p>
+      <h3>Typical Web server features:</h3>
+      <!-- Table for data -->
+      <table id="server-features">
+        <tr>
+          <th>Feature</th>
+          <th>Used for</th> 
+        </tr> 
+        <tr>
+          <td>Path translation</td>
+          <td>Locate resource specified in the URL</td> 
+        </tr>  
+        <tr>
+          <td>Virtual hosting</td>
+          <td>Run multiple websites from one server</td> 
+        </tr> 
+        <tr>
+          <td>Access restriction</td>
+          <td>Control who can access the resources</td> 
+        </tr> 
+        <tr>
+          <td>Log access & errors</td>
+          <td>Record what's going on (and what went wrong)</td> 
+        </tr> 
+        <tr>
+          <td>Encrypted operation</td>
+          <td>Protect sensitive data in transit</td> 
+        </tr> 
+        <tr>
+          <td>Load balancing</td>
+          <td>Manage traffic and processing resources</td> 
+        </tr> 
+        <tr>
+          <td>Server scripting</td>
+          <td>Run external programs and applications</td> 
+        </tr> 
+      </table>
+    </div>
+
+    <div class="empty"></div>
+    <div class="information" id="architecture">
+      <h2>Web architecture: HTTP, URIs and URLs</h2>
+      <p class="list-paragraph">Key web architecture components are:</p>
+      <ul>
+        <li>HTTP - HyperText Transfer Protocol. It allows communication between different systems and is used for transferring data from a web server to a browser to view web pages.</li>
+        <li>URI: Uniform Resource Identifier - formatted string that identifies a resource.</li>
+        <li>HTML/XHTML - HyperText Markup Language/eXtensible HyperText Markup Language. Used to create electronic documents (pages) that are displayed on the World Wide Web.</li>
+        <li>DNS - Domain Name System. The Internet's system for converting alphabetic names into numeric IP addresses.</li>
+        <li>TCP/IP - Transmission Control Protocol/Internet Protocol. A set of rules and procedures that define how data is exchanged.</li>
+      </ul>
+      <p>HyperText Transfer Protocol is what makes the Web work. Clients ask for resources from servers by assembling and sending
+         an HTTP request message and servers respond with the appropriate HTTP response message, including any content to be displayed.
+         HTTP requests and responses travel as TCP/IP packets (metadata in headers and content in an (optional) entity body).</p>
+      <p>HTTP is stateless. Each request/response pair is an independent exchange. No protocol level maintenance of state (for scalability) is required.</p>
+      <h3>Common HTTP methods</h3>
+      <!-- Table for data -->
+      <table id="methods">
+        <tr>
+          <th>Method</th>
+          <th class="centered">Use</th> 
+          <th class="centered">Safe</th> 
+          <th class="centered">Idempotent</th> 
+          <th class="centered">Mandatory</th>
+        </tr> 
+        <tr>
+          <td>HEAD</td>
+          <td>Exchange of request/response headers</td> 
+          <td class="centered">Yes</td> 
+          <td class="centered">Yes</td> 
+          <td class="centered">Yes</td> 
+        </tr>  
+        <tr>
+          <td>GET</td>
+          <td>Request and return the current state and content of a resource e.g. access a web page</td> 
+          <td class="centered">Yes</td> 
+          <td class="centered">Yes</td> 
+          <td class="centered">Yes</td> 
+        </tr>  
+        <tr>
+          <td>POST</td>
+          <td>Request uses entity body to update resource or as input for processing e.g. form input</td> 
+          <td class="centered">No</td> 
+          <td class="centered">No</td> 
+          <td class="centered">No</td> 
+        </tr>  
+        <tr>
+          <td>PUT</td>
+          <td>Server stores entity body contents  at request URI location e.g. file uploads</td> 
+          <td class="centered">No</td> 
+          <td class="centered">Yes</td> 
+          <td class="centered">No</td> 
+        </tr>  
+        <tr>
+          <td>DELETE</td>
+          <td>Deletes identified resource i.e. opposite of PUT</td> 
+          <td class="centered">No</td> 
+          <td class="centered">Yes</td> 
+          <td class="centered">No</td> 
+        </tr>  
+      </table>
+      <h3>HTTP Headers</h3>
+      <p>Headers are the metadata for the request/response exchange. They allow the client and the server to pass additional information with the request or the response.
+         Some are generic and apply to both request and response e.g. Date (date/time stamp for the message), Cache-Control (instructions for en-route caching).</p>
+      <h3>Uniform Resource Identifier</h3>  
+      <p class="list-paragraph">A URI (Uniform Resource Identifier) is a sequence of characters that identifies a logical or physical resource. There are two types of URIs:</p>
+      <ul id="uri-list">
+        <li>Uniform Resource Locator (URL) - this type of URI states which protocol should be used to locate and access the physical or logical resource on a network.
+            URLs are not persistent. If the resource’s location changes, the URL also needs to to be changed to point to the new location.</li>
+        <li>Uniform Resource Name (URN) - this type of URI labels the resource with a persistent, location-independent unique identifier. It never changes
+            throughout its lifetime.</li>
+      </ul>
+    </div>
+
+    <div class="empty"></div>
+    <div class="information" id="quiz">
+      <h2>Test what you've learned</h2>
+      <!-- Quiz -->
+      <div class="container" id="quiz-container">
+        <div class="title">How the Web Works Quiz</div>
+        <div class="question" id="question"></div>
+        <label class="option"><input type="radio" name="option" value="1"><span id="option1" class="option-span"></span></label>
+        <label class="option"><input type="radio" name="option" value="2"><span id="option2" class="option-span"></span></label>
+        <label class="option"><input type="radio" name="option" value="3"><span id="option3" class="option-span"></span></label>
+        <label class="option"><input type="radio" name="option" value="4"><span id="option4" class="option-span"></span></label>
+        <!-- When button is clicked call nextQuestion(); -->
+        <button class="next" id="next-button" onclick="nextQuestion();">Next question</button>
+      </div>
+      <!-- div to display results -->
+      <div class="result" id="quiz-result"><p id="result-text"></p>
+        <!-- When button is clicked user can try again -->
+        <button class="again" id="try-again" onclick="tryAgain();">Try again</button>
+      </div>
+    </div>
+    <!-- JavaScript for the quiz -->
+    <script src="../scripts/works-questions.js"></script>
+    <script src="../scripts/quiz.js"></script>
+
+      <div class="empty"></div>
+      <!-- References -->
+      <div class="information" id="references">
+      <hr>
+      <h3>References:</h3>
+        <p>Dennis, R. K. M. A., 2019. Internet. Available at: 
+          <a href="https://www.britannica.com/technology/Internet"><br>
+           https://www.britannica.com/technology/Internet</a></p>
+        <p>Messer, T., 2016. HTTP vs. HTTPS: What's the Difference and Why Should You Care?. Available at:             
+           <a href="https://www.entrepreneur.com/article/281633"><br>
+           https://www.entrepreneur.com/article/281633</a></p>
+        <p>Mitchell, B., 2018. Servers Are the Heart of the Internet. Available at:            
+           <a href="https://www.lifewire.com/servers-in-computer-networking-817380"><br>
+           https://www.lifewire.com/servers-in-computer-networking-817380</a></p>
+        <p>Mitchell, B., 2019. Introduction to Client Server Networks. Available at:            
+           <a href="https://www.lifewire.com/introduction-to-client-server-networks-817420"><br>
+           https://www.lifewire.com/introduction-to-client-server-networks-817420</a></p>  
+        <p>Mitchell, B., 2019. Understanding Transmission Control Protocol/Internet Protocol (TCP/IP). Available at:            
+           <a href="https://www.lifewire.com/transmission-control-protocol-and-internet-protocol-816255"><br>
+           https://www.lifewire.com/transmission-control-protocol-and-internet-protocol-816255</a></p> 
+        <p>Oluwatosin, H. S., 2014. Client-Server Model, IOSR Journal of Computer Engineering (IOSR-JCE) e-ISSN: 2278-0661,
+           p- ISSN: 2278-8727 Volume 16, Issue 1, Ver. IX (Feb. 2014), PP 67-71</p>
+        <p>Polenin, M., n.d. Why Are Network Protocols Needed?. Available at:            
+           <a href="https://www.techwalla.com/articles/why-are-network-protocols-needed"><br>
+           https://www.techwalla.com/articles/why-are-network-protocols-needed</a></p> 
+        <p>Rouse, M., n.d. URI (Uniform Resource Identifier). Available at:             
+           <a href="https://searchmicroservices.techtarget.com/definition/URI-Uniform-Resource-Identifier"><br>
+           https://searchmicroservices.techtarget.com/definition/URI-Uniform-Resource-IdentifierPolenin</a></p> 
+        <p>Sample, I., n.d. What is the internet? 13 key questions answered. Available at:                    
+           <a href="https://www.theguardian.com/technology/2018/oct/22/what-is-the-internet-13-key-questions-answered"><br>
+           https://www.theguardian.com/technology/2018/oct/22/what-is-the-internet-13-key-questions-answered</a></p>
+        <p>Thoke, O., 2018. Know More About Domain Names and The Registration Process. Available at:                  
+           <a href="https://www.lifewire.com/domain-names-and-registration-process-3473709"><br>
+           https://www.lifewire.com/domain-names-and-registration-process-3473709</a></p>
+        <p id="last-text">Unuth, N., 2019. What IP Means and How It Works. Available at:                               
+           <a href="https://www.lifewire.com/internet-protocol-explained-3426713"><br>
+           https://www.lifewire.com/internet-protocol-explained-3426713</a></p>
+      </div>
+  </body>
+</html>

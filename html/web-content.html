@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/web-contentCSS.css">
+    <title>Learn about the internet</title>
+  </head>
+
+  <body>
+    <!-- Navigation menu -->
+    <div class="navigation-menu">
+      <nav>
+        <ul class="menu-contents">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="web-history.html">History of the Web</a></li>
+          <li><a href="web-works.html">How the Web works</a></li>
+          <li><a href="web-content.html">Web content</a></li>
+          <li id="feedback"><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>    
+    </div>
+
+    <!-- Navigation menu with local links -->
+    <div class="content-section">
+      <ul id="sections">
+        <li><a href="#principles">Key principles</a></li>
+        <li><a href="#html">HTML</a></li> 
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#javascript">JavaScript</a></li>
+        <li><a href="#quiz">Quiz</a></li> 
+      </ul>
+    </div>
+
+    <!-- Empty divs are used for better functionality of local links -->
+    <div class="empty"></div>
+    <div id="content-heading">
+    <h1>Web content</h1>
+    </div>
+
+    <div class="empty"></div>
+    <div class="information" id="principles">
+      <h2>Key principles</h2>
+      <p>Each website has a source code that is delivered to the client (browser). It can be done via HTTP, via local file system etc.
+         Then the browser processes document and renders the display to the user. Final appearance is a combination of source construction
+         (by the author) and rendering capability (in web browser). All web documents use HTML – Hypertext Mark-up Language.
+         Other embedded technologies enhance display and behaviour (CSS, JavaScript).</p>
+      <p class="list-paragraph">A web document typically has three concerns:</p>
+      <ul>
+        <li>Content – the information conveyed by a page (HTML is used for this purpose).</li>
+        <li>Presentation – the appearance of a page (CSS is used for this purpose).</li>
+        <li>Behaviour – interactive or responsive functionality (JavaScript (client-side) and PHP, Perl, Java, Ruby etc. (server-side) are used for this purpose).</li>
+      </ul>
+      <p>Separation of content from presentation is a good practice in web development and tells you for example, semantic markup versus stylistic instructions,
+         heading level versus large font, strong emphasis versus bold, new paragraph versus line break plus consistency, accessibility, ease of maintenance etc.</p>
+    </div>
+
+    <div class="empty"></div>
+    <div class="information" id="html">
+      <h2>HTML</h2>
+      <p class="list-paragraph">HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured.
+         This markup tells a web browser how to display the text, images and other forms of multimedia on a webpage. HTML was originally designed to be very simple.
+         As the web became popular and browsers developed, new features were added to subsequent versions (page structure, forms, images, tables, frames, support for CSS,
+         support for dynamic scripting with JavaScript, accessibility features, standardised support for multimedia and embedded objects).</p>
+      <p class="list-paragraph">HTML originally only targeted at Web browsers on PCs and workstations:</p>
+      <ul>
+        <li>Forgiving of syntax errors and variations in HTML markup (elements with and without end tags, uppercase and lowercase tag names etc.).</li>
+        <li>It requires more processing at browser than a markup language with stricter syntax.</li>
+        <li>Causes problems for constrained devices and for machine-oriented processing of markup.</li>
+      </ul>
+      <p>All of these problems led to the development of XHTML 1.0. The syntax for HTML was tightened up using XML mark-up rules.
+         XHTML uses the same tags and attributes as HTML 4.01 with differences in structure and syntax.</p>
+      <p>XML is a standardised, but flexible specification for creating markup languages it was derived directly from SGML (as was HTML) and 
+         designed for online data description and exchange.</p>
+      <p>XHTML is advantageous because it was designed for internationalization, accessibility, device independence, usability and document structuring.
+         It also lead developers towards enforced separation of concerns. However it is not so good because of its complex evolution. It requires new/re-engineered 
+         renderers to benefit over existing HTML development. It is unwieldy in contemporary use cases.</p>
+      <p>The newest version of HTML is HTML5. It is the fifth and current major version of the HTML standard, and subsumes XHTML. It contains a lot of
+         new functionalities and is widely used nowadays.</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u0OeZfIfBRI" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><a href="https://www.youtube.com/embed/u0OeZfIfBRI">What is HTML? What Does It Do? And What Is It Used For?<br></a> by <a href="https://www.youtube.com/channel/UCt8Sa48zWN_WcordE7TaUBg">
+        WinningWP - Winning WordPress</a> on <a href="https://youtube.com">YouTube</a>.</p>
+      </div>
+    </div>
+
+    <div class="empty"></div>
+    <div class="information" id="css">
+      <h2>CSS</h2>
+      <p>Plain webpages are dull. Additional meaning and aesthetics enhance (and influence) user experience. Cascading Style Sheets provide a central
+         location in which information about what various fonts, foreground colors, background colors, italicization and emphasization should be
+         applied to various HTML elements within a webpage. Cascading style sheets can also control how various parts of a page are laid out on it. 
+         This can be very useful when the same website needs to be presented on different devices or platforms.</p>
+      <p>In 1994, one major component that was still missing was a tool to style web pages. In this year, 3 days before Netscape was made available as a browser,
+         Håkon Wium Lie published the first draft of the Cascading HTML Style Sheets proposal. The proposal took into account that neither the author nor the reader
+         would have complete control of the style of the document, their styles needed to be combined. After a lot of debate, with Microsoft signaling they would
+         support CSS in their browsers, it was selected by W3C as the recommended styling tool for the web. Today CSS is the main tool used for styling websites.</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6d_4sd_l7rQ" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><a href="https://www.youtube.com/embed/6d_4sd_l7rQ">What's CSS?<br></a> by <a href="https://www.youtube.com/channel/UC5CMtpogD_P3mOoeiDHD5eQ">
+        Codeacademy</a> on <a href="https://youtube.com">YouTube</a>.</p>
+      </div>
+    </div>
+
+    <div class="empty"></div>
+    <div class="information" id="javascript">
+      <h2>JavaScript</h2>
+      <p>JavaScript is a scripting language with object oriented capabilities that executes in the Web browser on the client machine.
+         The browser has a JavaScript interpreter and is the script execution environment. JavaScript is embedded in XHTML, i.e. 
+         the code to run arrives with the web page. JavaScript has C-style syntax (contains dynamic typing and runtime evaluation).
+         The only connection to Java is in the name.</p>
+      <p>JavaScript is used for interaction with user behaviour (mouse movement, key presses etc.) and interaction with browser environment
+         (browser driven events, browser-type driven behaviour).</p>
+      <p>In 1995, Marc Andreessen, founder of Netscape Communications, had the vision that the web needed a way to become more dynamic.
+         The web needed a languge that could interact with the DOM. To achieve this, Brendan Eich was famously contracted by Netscape
+         to design such a language on a very tight deadline. Eich created a quick concept using Java-based syntax. He then went on to incorporate
+         a unique style of object-oriented programming. And eventually JavaScript - the most popular scripting language for the web - was born.</p>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nItSSTwBvSU" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><a href="https://www.youtube.com/embed/nItSSTwBvSU">What is JavaScript?<br></a> by <a href="https://www.youtube.com/channel/UCUFbBYzSUafxMpUbTmroGhg">
+        Code School</a> on <a href="https://youtube.com">YouTube</a>.</p>
+      </div>
+    </div>
+
+    <div class="empty"></div>
+    <div class="information" id="quiz">
+      <h2>Test what you've learned</h2>
+      <!-- Quiz -->
+      <div class="container" id="quiz-container">
+        <div class="title">Web Contents Quiz</div>
+        <div class="question" id="question"></div>
+        <label class="option"><input type="radio" name="option" value="1"><span id="option1" class="option-span"></span></label>
+        <label class="option"><input type="radio" name="option" value="2"><span id="option2" class="option-span"></span></label>
+        <label class="option"><input type="radio" name="option" value="3"><span id="option3" class="option-span"></span></label>
+        <label class="option"><input type="radio" name="option" value="4"><span id="option4" class="option-span"></span></label>
+        <!-- When button is clicked call nextQuestion(); -->
+        <button class="next" id="next-button" onclick="nextQuestion();">Next question</button>
+      </div>
+      <!-- div to display results -->
+      <div class="result" id="quiz-result"><p id="result-text"></p>
+        <!-- When button is clicked user can try again -->
+        <button class="again" id="try-again" onclick="tryAgain();">Try again</button>
+      </div>
+    </div>
+    <!-- JavaScript for the quiz -->
+    <script src="../scripts/content-questions.js"></script>
+    <script src="../scripts/quiz.js"></script>
+
+    <div class="empty"></div>
+    <!-- References -->
+    <div class="information" id="references">
+      <hr>
+      <h3>References:</h3>
+      <p>Flanagan, D., 2006. JavaScript – The Definitive Guide. 5th ed. s.l.:Sebastopol, Calif. : O'Reilly. 
+      <p>Lebec, G., 2019. JavaScript: A History for Beginners.                        
+        <a href="https://www.coursereport.com/blog/history-of-javascript"><br>
+        https://www.coursereport.com/blog/history-of-javascript</a></p>
+      <p>Mulder, D., 2017. A brief history of CSS. Available at:                        
+        <a href="https://medium.com/@danamulder/a-brief-history-of-css-d27986eebc86"><br>
+        https://medium.com/@danamulder/a-brief-history-of-css-d27986eebc86</a></p>
+      <p>Peyrott, S., 2017. A Brief History of JavaScript. Available at:                        
+        <a href="https://auth0.com/blog/a-brief-history-of-javascript/"><br>
+        https://auth0.com/blog/a-brief-history-of-javascript/</a></p>  
+      <p>WinningWP Editorial, n.d. What is HTML? What Does It Do? And What Is It Used For?. Available at:                        
+        <a href="https://winningwp.com/what-is-html-tutorial-video/"><br>
+        https://winningwp.com/what-is-html-tutorial-video/</a></p> 
+      <p id="last-text">Wright, T., 2009. HTML5 and The Future of the Web. Available at:                        
+        <a href="https://www.smashingmagazine.com/2009/07/html5-and-the-future-of-the-web"><br>
+        https://www.smashingmagazine.com/2009/07/html5-and-the-future-of-the-web</a></p> 
+    </div>
+  </body>
+</html>

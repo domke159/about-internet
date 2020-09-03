@@ -1,0 +1,306 @@
+html, body {
+  height: 5185px;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.navigation-menu {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #3B5998;
+  z-index: 60;
+  min-width: 710px;
+}
+
+.menu-contents {
+  position: relative;
+  top: 0px;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navigation-menu a {
+  float: left;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#feedback {
+  /* Put feedback to the right of the navigation menu */
+  float: right;
+}
+
+.navigation-menu a:hover {
+  background-color: #6497b1;
+}
+
+#internet-heading {
+  color: #3B5998;
+  text-align: center;
+  position: relative;
+  top: 90px;
+  z-index: 1;
+  margin: 0px 0px 0px 170px;
+}
+
+.internet-section {
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  background-color: #24292e;
+  z-index: 5;
+  display: block;
+  min-width: 120px;
+}
+
+#sections {
+  list-style: none;
+  text-align: center;
+  top: 3%;
+}
+
+#sections a {
+  position: relative;
+  display: block;
+  padding: 25px 10px;
+  top: 50px;
+  right: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#sections a:hover {
+  color: #6497b1;
+}
+
+.information {
+  position: relative;
+  float: right;
+  width: 85%;
+  top: 80px;
+  left: 0px;
+  min-width: 400px;
+}
+
+.information ul {
+  position: relative;
+  left: 40px;
+  margin: 0;
+  width: 80%;
+}
+
+.list-paragraph{
+  margin-bottom: 5px;
+}
+
+p, .video-wrapper {
+  margin: 20px 30px 20px 55px;
+}
+
+iframe {
+  border: 0px;
+}
+
+h2 {
+  padding: 55px 0px 0px 0px;
+  margin: 0px 30px 0px 55px;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+th {
+  background-color: #3B5998;
+  color: #fff;
+  border: 0px;
+  padding: 10px 5px;
+}
+
+/* Different colours for the even and odd rows of the table */
+tr:nth-child(even) td { 
+  background-color: #F1F1F1; 
+}   
+      
+tr:nth-child(odd) td { 
+  background-color: #FEFEFE; 
+}  
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  min-width: 70%;
+  max-width: 70%;
+  margin: 20px 50px;
+}
+
+h3 {
+  padding: 10px 0px 0px 0px;
+  margin: 0px 50px;
+}
+
+span {
+  color: #455890;
+}
+
+#server-features {
+  min-width: 50%;
+  max-width: 50%;
+}
+
+#methods {
+  min-width: 80%;
+  max-width: 80%;
+}
+
+.centered {
+  text-align: center;
+}
+
+#uri-list {
+  margin: 0px 0px 20px 0px;
+}
+
+.container {
+  color: #fff;
+  height: 330px;
+  position: absolute;
+  padding: 20px;
+  margin: 40px;
+  left: 10px;
+  overflow: auto;
+  text-align: center;
+  /* Image by Pete Linforth on pixabay.com */
+  background-image: url("https://cdn.pixabay.com/photo/2018/04/28/16/40/network-3357642_1280.jpg");
+}
+
+.title {
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+.question {
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px 0px;
+  /* For older browsers without RGBA-support */
+  background: rgb(59,89,152); 
+  background: rgba(59,89,152,0.9);
+  text-align: center;
+}
+
+.option-span {
+  color: #fff;
+}
+
+.option {
+  width: 515px;
+  display: inline-block;
+  padding: 10px 0px 10px 15px;
+  vertical-align: middle;
+  margin: 10px 0px 10px 10px;
+  border-radius: 20px;
+  /* For older browsers without RGBA-support */
+  background: rgb(0,91,150,0.9);
+  background: rgba(0,91,150,0.9);
+  cursor: pointer;
+  text-align: left;
+}
+
+
+.option:hover {
+  background-color: #6497b1;
+}
+
+.next {
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  top: 10px;
+  right: 15px;
+  margin: 0px;
+  /* For older browsers without RGBA-support */
+  background: rgb(27,133,184,0.9);
+  background: rgba(27,133,184,0.9);
+  color: #fff;
+  display: inline-block;
+}
+
+.next:hover {
+  background-color: #4F7AC6;
+}
+
+.result {
+  color: #fff;
+  height: 330px;
+  position: absolute;
+  /* Image by Pete Linforth on pixabay.com */
+  background-image: url("https://cdn.pixabay.com/photo/2018/04/28/16/40/network-3357642_1280.jpg");
+  padding: 20px;
+  width: 85%;
+  margin: 40px;
+  left: 10px;
+  text-align: center;
+}
+
+.result {
+  display: none;
+}
+
+#result-text {
+  position: relative;
+  top: 25%;
+  font-size: 25px;
+}
+
+.again {
+  text-align: center;
+  position: relative;
+  top: 90px;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  /* For older browsers without RGBA-support */
+  background: rgb(27,133,184,0.9);
+  background: rgba(27,133,184,0.9);
+  color: #fff;
+}
+
+.again:hover {
+  background-color: #4F7AC6;
+}
+
+/* When an option is selected change the colour of the text */
+input[type=radio]:checked+span {
+  color: #7bb3ff;
+}
+
+#references {
+  position: relative;
+  top: 550px;
+}
+
+#references p {
+  font-style: italic;
+  font-size: 13px;
+}
+
+#last-text {
+  margin-bottom: 0px;
+}

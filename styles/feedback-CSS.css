@@ -1,0 +1,128 @@
+html, body {
+  height: 950px;
+  background-color: #24292e;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gill Sans", sans-serif;
+  overflow: auto;
+  text-align: center;
+}
+
+.navigation-menu {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  min-width: 710px;
+  background-color: #3B5998;
+  z-index: 10;
+}
+
+.menu-contents {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navigation-menu a {
+  float: left;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#feedback {
+  /* Put feedback to the right of the navigation menu */
+  float: right;
+}
+
+.navigation-menu a:hover {
+  background-color: #6497b1;
+}
+
+form {
+  color: #f7f7f7;
+  display: inline-block;
+  position: relative;
+  top: 70px;
+  /* Photo by Markus Spiske on pixabay.com*/
+  background-image: url("https://cdn.pixabay.com/photo/2016/08/05/07/17/laptop-1571702_1280.jpg");
+  margin: 30px;
+  height: 820px;
+  background-position: 5% 8%;
+  margin-bottom: 0px;
+}
+
+fieldset {
+  border: none;
+  margin: 10px;
+}
+
+#feedback-title {
+  /* For older browsers without RGBA-support */
+  background: rgb(59,89,152,0.6);
+  background: rgba(59,89,152,0.6);
+  text-shadow: none;
+  padding: 15px;
+  margin: 0;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#feedback-title {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.user-data {
+  width: 250px;
+  border: none;
+  height: 25px;
+  padding-left: 5px;
+}
+
+.user-data, textarea, select, form {
+  border-radius: 5px;
+}
+
+#submit-button {
+  cursor: pointer;
+  margin: 15px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  /* For older browsers without RGBA-support */
+  background: rgb(59,89,152,0.6);
+  background: rgba(59,89,152,0.6);
+}
+
+#submit-button:hover {
+  background-color: #7289da;
+}
+
+select {
+  cursor: pointer;
+}
+
+/* Placeholders for different browsers */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000;
+  padding-left: 5px;
+  opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #000;
+  padding-left: 5px;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #000;
+  padding-left: 5px;
+}
+
+.review p {
+  padding: 5px 0px;
+}
+  

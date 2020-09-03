@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/feedback-CSS.css">
+    <script src="validation.js"></script>
+    <title>Learn about the internet</title>
+  </head>
+
+  <body>
+    <!-- Navigation menu -->
+    <div class="navigation-menu">
+      <nav>
+        <ul class="menu-contents">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="web-history.html">History of the Web</a></li>
+          <li><a href="web-works.html">How the Web works</a></li>
+          <li><a href="web-content.html">Web content</a></li>
+          <li id="feedback"><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>    
+    </div>
+
+    <!-- Feedback form -->
+    <form method="POST" action="https://internal.cs.ncl.ac.uk/modules/2017-18/csc1026/scripts/formscript.php" name="form" class="form-box"  onsubmit="return validate()">
+      <p id="feedback-title">Tell us what you think about this website</p>
+      <div>
+        <fieldset class="personal-data">
+          <p>First Name:</p>
+          <input class="user-data" id="user-name" type="text" name="your-name" placeholder="e.g. John Johnson" required autofocus>
+          <p>E-mail address:</p>
+          <input class="user-data" id="email-address" type="text" name="email" placeholder="e.g. john.johnson@gmail.com" required>
+        </fieldset>
+        <fieldset class="review">
+          <p>Rate our website:</p>  
+          <select name="rating" id="rating" required>
+            <option value="">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <p>What do you like about our website (design, provided information, etc.)?</p>
+          <textarea name="positive-feedback" rows="8" cols="60" placeholder="Type here..." required></textarea>
+          <p>What would you improve about this website (quality of information, design, etc.)?</p>
+          <textarea name="negative-feedback" rows="8" cols="60" placeholder="Type here..." required></textarea>
+        </fieldset>
+        <input id="submit-button" type="submit" name="submit" value="Submit">
+      </div>
+    </form>
+  </body>
+</html>
